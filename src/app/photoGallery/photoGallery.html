@@ -1,0 +1,13 @@
+<div class="grid-photo-container">
+    <p>Photo gallery works</p>
+
+    <a class="arrow grid-arrow" (click)="changePhoto('previous')">
+        <i class="fas fa-arrow-circle-left"></i>
+    </a>
+    <div class="grid-photo">
+        <img src="{{ selectedPhoto }}" width="300" height="200">
+     </div>
+    <a class="arrow grid-arrow" (click)="changePhoto('next')">
+        <i class="fas fa-arrow-circle-right"></i>
+    </a>
+</div>
