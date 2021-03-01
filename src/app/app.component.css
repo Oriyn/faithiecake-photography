@@ -1,9 +1,9 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-  'header header'
-  'main main'
-  'footer footer';
+  'header'
+  'main'
+  'footer';
   grid-gap: 10px;
   padding: 10px;
 }

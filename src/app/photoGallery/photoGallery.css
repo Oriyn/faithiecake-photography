@@ -1,3 +1,82 @@
 .arrow {
   font-size: 4rem;  
 }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'arrow-left photo arrow-right';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+div {
+  margin-top: 5rem;  
+}
+
+.grid-arrow-left {
+  grid-area: arrow-left;
+  margin: 0 3rem 0 3rem;
+}
+ 
+.grid-arrow-right {
+  grid-area: arrow-right;
+  margin: 0 3rem 0 3rem;
+}
+
+.grid-photo {
+  grid-area: photo;
+}
+
+
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}

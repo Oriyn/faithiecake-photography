@@ -1,13 +1,11 @@
 <div class="grid-photo-container">
-    <p>Photo gallery works</p>
-
-    <a class="arrow grid-arrow" (click)="changePhoto('previous')">
+    <a class="arrow grid-arrow-left" (click)="changePhoto('previous')">
         <i class="fas fa-arrow-circle-left"></i>
     </a>
-    <div class="grid-photo">
-        <img src="{{ selectedPhoto }}" width="300" height="200">
-     </div>
-    <a class="arrow grid-arrow" (click)="changePhoto('next')">
+    <span class="grid-photo">
+        <img class="fade-in" src="{{ selectedPhoto }}" height="200">
+    </span>
+    <a class="arrow grid-arrow-right" (click)="changePhoto('next')">
         <i class="fas fa-arrow-circle-right"></i>
     </a>
 </div>
